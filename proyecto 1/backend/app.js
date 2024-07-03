@@ -20,6 +20,47 @@
     8. Consumir esa API - Recursos desde su front
 */
 
+/* MEAN STACK 
+    STACKS - Conjunto de tecnologia para crear apps
+    Escalabilidad: Hacer productos más fácil
+    Programación modular (Separar equipo de front y backend)
+    Practicidad - Mantenimiento - Legibilidad
+*/
+/* Modelo C-S (Cliente-Servidor)
+    Cliente - Estático
+        Lo que se ve (Interfaz)
+        UX UI - experiencia de usuario
+        Navegador
+        Frontend
+    PETICIONES Y RESPUESTAS
+    Servidor - Dinámico
+        DB - Base de datos
+        Logica
+        Backend
+        Base - Funcionalidad
+        Dinamismo (Modificación información)
+        Peticiones APIS - CRUD
+*/
+/* 
+    node.js - Entorno de ejecucion Js en el servidor
+    Base de datos - Espacio de almacenamiento de información
+    MongoDB - Gestor de la base de datos, local o en la nube
+        NoSQL - Collecciones y documentos JSON
+    MongoDB Atlas - Servicio en la nube para gestionar las db de Mongo
+    EXPRESS - Dependencia, Framework esquema de trabajo para montar servidor y rutas de peticiones
+    Patrones de diseño - Estandar para estructurar proyectos
+        Escalabilidad 
+        Mantenimiento y reutilización (Modulos)
+        Modelo MVC
+    Modulos - Fragmentos de codigos propios
+    Dependencias - Fragmentos codigos terceros - requiere paquetes npm
+    Express dotenv: Gestión e integración de variables de entorno (Info sensible)
+    Mongoose : Integracion con Mongoo - Esquema y modelo
+    Nodemon : Ver cambios en tiempo real reinicia el servidosr
+    Postman - Cliente Prueba
+*/
+
+
 // 1. Importar las dependencias y modulos
 import express from 'express';
 import dotenv from 'dotenv';
@@ -46,7 +87,7 @@ app.use(express.json());
 app.use ('/', productsRouter);
 
 
-//3. Escuchar servidor
+//3. Escuchar servidor - Inicia
 
 app.listen(port, ()=>{
     console.log(`El servidor se esta escuchando en: http://localhost:${port}`);
