@@ -21,4 +21,4 @@ const productSchema = new schema({
 // mongoose.model - Crea el modelo 
 // 1. Nombre de la colección 
 // 2. Dar como parametro el esquema
-export const productModel = mongoose.model('usuario',productSchema);
+export const productModel = mongoose.model('productos',productSchema);
